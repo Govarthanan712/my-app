@@ -1,0 +1,25 @@
+<div>
+<div class="bg">
+    <h1>FullameObserver</h1>
+    {{this.gova.fullName}}
+</div>
+
+<div class="bg">
+<h1>Using Observers two way bindings</h1>
+<li>Husband pets-<b>{{this.husband.pets}}</b><br></li>
+<li>Wife pets-<b>{{this.wife.pets}}</b><br></li>
+</div>
+
+<div class="bg">
+<h1>Using Observers One way bindings</h1>
+<li>Admin pass- <b>{{this.admin.pass}}</b><br></li>
+<li>User pass-<b>{{this.user.pass}}</b><br></li>
+</div>
+
+{{#each this.food as |item|}}
+    <li>{{item}}</li>
+  {{else}}
+  sorry ,nobody is there
+{{/each}}
+{{yield}}
+</div>

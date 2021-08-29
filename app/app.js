@@ -2,7 +2,7 @@ import Application from '@ember/application';
 import Resolver from 'ember-resolver';
 import loadInitializers from 'ember-load-initializers';
 import config from 'my-app/config/environment';
-import EmberObjects from '@ember/object';
+import EmberObjets from '@ember/object';
 
 export default class App extends Application {
   modulePrefix = config.modulePrefix;

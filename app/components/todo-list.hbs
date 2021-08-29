@@ -2,6 +2,9 @@
 
 {{this.scorer.titles}}
 <br><h1>Not Updated</h1>
-{{this.scorer.incomplete}}
+{{this.scorer.incompleteLength}}-incompletelenth<br>
 
+{{#each this.scorer.todo as |item index|}}
+  <li>{{item.title}}----{{index}} in line</li>
+{{/each}}
 {{yield}}
